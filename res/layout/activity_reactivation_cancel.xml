@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+	
+ 		<include layout="@layout/titlebar" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_tvandet"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/common_textview"
+                    android:text="用戶名:" />
+
+                <EditText
+                    android:id="@+id/reactivition_employeeNo_old"
+                    style="@style/common_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/common_textview"
+                    android:text="原密码:" />
+
+                <EditText
+                    android:id="@+id/reactivition_employeeName_old"
+                    android:password="true"
+                    style="@style/common_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/common_textview"
+                    android:text="新密码:" />
+
+                <EditText
+                    android:id="@+id/reactivition_phoneNo_old"
+                     android:password="true"
+                    style="@style/common_edittext" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reactivation_new_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/common_textview"
+                        android:text="新密码确认:" />
+
+                    <EditText
+                        android:id="@+id/reactivition_employeeNo_new"
+                         android:password="true"
+                        style="@style/common_edittext" />
+                </LinearLayout>
+
+              <!--   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/common_textview"
+                        android:text="新的姓名:" />
+
+                    <EditText
+                        android:id="@+id/reactivition_employeeName_new"
+                        style="@style/common_edittext" />
+                </LinearLayout> -->
+
+                <!-- <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/common_textview"
+                        android:text="新手机号:" />
+
+                    <EditText
+                        android:id="@+id/reactivition_phoneNo_new"
+                        style="@style/common_edittext" />
+                </LinearLayout> -->
+
+               <!--  <LinearLayout
+                    android:id="@+id/reactivition_cancel_old"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="8"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="是否同步取消原有手机号码的激活"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/reactivition_lockswitch"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="2"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/off" />
+                </LinearLayout> -->
+
+              <!--   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView style="@style/verificationNo_tv" />
+
+                    <EditText
+                        android:id="@+id/reactivition_verificationNo"
+                        style="@style/verificationNo_et"
+                        android:gravity="center_horizontal" />
+
+                    <com.sinosoft.mobileshop.appwidget.TimeButton
+                        android:id="@+id/reactivition_getVerificationNo"
+                        style="@style/verificationNo_btn" />
+                </LinearLayout> -->
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/reactivition_Reactivition"
+                style="@style/common_bigbtn"
+                android:text="修改密码" />
+
+            <Button
+                android:id="@+id/reactivition_cancel_activition"
+                style="@style/common_bigbtn"
+                android:text="取消注册和激活"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
